@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}首页 - 个人主页{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>你好，我是 李京黛</h1>
+            <p class="hero-subtitle">上海财经大学 | 数据科学与大数据技术 | 大一</p>
+            <p class="hero-description">
+                    热衷于数据科学和人工智能领域，致力于运用技术解决实际问题。
+                    积极参与学术竞赛和社会实践，不断提升自己的专业能力和综合素质。
+                    参与"英财启航"新财经AI沙龙（上财*英伟达）等活动，拓展学术视野。
+                    GPA 3.57/4，目标是在数据科学领域深造和发展。
+                </p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('projects') }}" class="btn btn-primary">查看项目</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-secondary">联系我</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">我的技能</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>编程语言</h3>
+                <p>熟练掌握C++和Python，能够运用这些语言解决数据科学和算法问题</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>设计工具</h3>
+                <p>熟悉Canva等设计工具，能够制作易拉宝、宣传视频等视觉内容</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>数据科学</h3>
+                <p>学习数据科学与大数据技术专业，掌握数据处理、分析和可视化技能</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>市场分析</h3>
+                <p>通过全国大学生市场调查与分析大赛，掌握市场调研和数据分析能力</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-volunteer"></i>
+                </div>
+                <h3>志愿服务</h3>
+                <p>参与"筑梦云辅导"志愿者项目，结对甘肃省学生，培养社会责任感</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="latest-projects">
+    <div class="container">
+        <h2 class="section-title">最新项目</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-content">
+                    <h3>论文追踪Agent</h3>
+                    <p>基于AI的学术论文自动追踪与分析系统，帮助研究者及时了解领域最新进展</p>
+                    <a href="{{ url_for('projects') }}" class="btn-link">了解更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="project-content">
+                    <h3>市场调查与分析</h3>
+                    <p>"正大杯"全国大学生市场调查与分析大赛项目，获得上海市一等奖</p>
+                    <a href="{{ url_for('projects') }}" class="btn-link">了解更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="project-content">
+                    <h3>AI* Finance 暑校项目</h3>
+                    <p>剑桥大学"AI* Finance"暑校学习项目，探索人工智能在金融领域的应用</p>
+                    <a href="{{ url_for('projects') }}" class="btn-link">了解更多 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
